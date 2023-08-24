@@ -78,6 +78,7 @@
         <span><strong>Estoque</strong> {{product.stock}}</span>
         <span><strong>Preço</strong> {{product.price|currency}}</span>
         <span><strong>Preço</strong> {{product.price|currency}}</span>
+        <span style="font-size: 1.6em;color: red;"><strong>Nota</strong> {{product.reviewRate}}</span>
         <span>
           <ul>
             <li style="font-size: 1.3em;" *ngFor="let cat of product.categories">{{cat.name}}</li>
