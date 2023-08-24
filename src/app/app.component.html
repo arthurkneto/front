@@ -55,7 +55,8 @@
 </main>
 
 <div>
-  <h1 style="margin: 10px;transform: rotate(-1.5deg);">Categorias</h1>
+  <div>
+    <h1 style="margin: 10px;transform: rotate(-1.5deg);">Categorias</h1>
 
 	<ol style="margin: 10px;transform: rotate(-2deg);">
 		<li *ngFor="let category of categories">
@@ -63,18 +64,21 @@
 			<span><strong>ID</strong> {{category.id}}</span>
     </li>
 	</ol>
+  </div>
 
   <br>
   <br>
-  <br>
 
-  <h1 style="margin: 10px;transform: rotate(1.5deg);">Produtos</h1>
+  <div style="position:absolute;bottom:10px;">
+    <h1 style="margin: 10px;transform: rotate(1.5deg);">Produtos</h1>
 	
-	<ol reversed start="10" style="margin: 10px;transform: rotate(2deg);">
-		<li *ngFor="let product of products">
-			<span>{{product.name}}</span>
-			<span><strong>Estoque</strong> {{product.stock}}</span>
-      <span><strong>Preço</strong> {{product.price|currency}}</span>
-		</li>
-	</ol>
+    <ol reversed start="10" style="margin: 10px;transform: rotate(2deg);">
+      <li *ngFor="let product of products">
+        <span>{{product.name}}</span>
+        <span><strong>Estoque</strong> {{product.stock}}</span>
+        <span><strong>Preço</strong> {{product.price|currency}}</span>
+      </li>
+    </ol>
+  </div>
+  
 </div>
